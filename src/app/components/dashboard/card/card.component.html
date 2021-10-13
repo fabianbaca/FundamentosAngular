@@ -1,0 +1,72 @@
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card.title">{{ nombre }}</h5>
+    <button (click)="verDetalle()" class="btn btn-secondary ">
+		Detalles
+	</button>
+  </div>
+</div>
+
+<!-- <input type="text" [value]="nuevoTexto" #idIput>
+<button (click)="cambiarTextoPadre(idIput.value)">cambiar texto</button> -->
+<!-- <div class="card" style="width: 18rem;">
+  <div class="card-body">
+		<h5>{{ nombre }}</h5>
+    <p class="card-text">
+			{{ email }}	<br>
+			<span>
+				{{ genero }}
+			</span>
+		</p>
+  </div>
+</div> -->
+<!--ngStyle-->
+<!-- <div class="card" style="width: 18rem;">
+  <div class="card-body">
+		<h5>{{ nombre }}</h5>
+    <p class="card-text">
+			{{ email }}	<br>
+			<span [ngStyle]="{'color': genero == 'femenino' ? 'blue' : 'red'}">
+				{{ genero }}
+			</span>
+		</p>
+  </div>
+</div> -->
+
+<!--ngClass-->
+<!-- <div class="card" style="width: 18rem;">
+  <div class="card-body">
+		<h5>{{ nombre }}</h5>
+    <p class="card-text">
+			{{ email }}	<br>
+			<span [ngClass]="genero=='masculino' ? 'masculino' : 'femenino'">
+				{{ genero }}
+			</span>
+		</p>
+  </div>
+</div> -->
+
+<!-- <div class="card" style="width: 18rem;">
+  <div class="card-body">
+		<h5>{{ nombre }}</h5>
+    <p class="card-text" [ngSwitch]="genero">
+			{{ email }}	<br>
+			<span *ngSwitchCase="'masculino'" class="masculino">
+				{{ genero }}
+			</span>
+			<span *ngSwitchCase="'femenino'" class="femenino">
+				{{ genero }}
+			</span>
+			<span *ngSwitchDefault class="badege bg-warning">
+				indefinido
+			</span>
+		</p>
+  </div>
+</div> -->
+
+<!-- <div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5>{{ nombre }}</h5>
+    <button routerLink="usuario/{{id}}">detalles</button>
+  </div>
+</div> -->

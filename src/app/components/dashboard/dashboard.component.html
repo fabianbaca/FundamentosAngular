@@ -1,0 +1,45 @@
+<!-- <div class="container">
+    <h1>ngif ejemplo</h1>
+    <h2 *ngIf="texto != ''">{{ texto }}</h2>
+    <h2 style="color: red" *ngIf="texto == ''">  porfavor ingrese texto  </h2>
+    <app-card [(nuevoTexto)]="texto"></app-card>
+</div> -->
+
+<!--ngfor-->
+<!-- <div class="container">
+    <h1>Listado de usuarios</h1>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let usuario of listaUsuarios">
+            <app-card [user]="usuario"></app-card>
+        </div>
+    </div>
+</div> -->
+
+<!--ngModel-->
+<!-- <div class="container">
+    <h1>Listado de usuarios</h1>
+    <input type="text" [(ngModel)]="texto">
+    <h2>{{ texto }}</h2>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let usuario of listaUsuarios">
+            <app-card [user]="usuario"></app-card>
+        </div>
+    </div>
+</div> -->
+
+<!--comunicacion de componentes hermanos-->
+<!-- <div class="container">
+    <h1>Listado de usuarios</h1>
+    <input type="text" [(ngModel)]="texto" (ngModelChange)="onChange($event)" >
+    <app-inicio></app-inicio>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let usuario of listaUsuarios">
+            <app-card [user]="usuario"></app-card>
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+ 
